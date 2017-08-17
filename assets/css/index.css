@@ -1,5 +1,83 @@
-body {
-  background-color: #ddd; }
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
-h3 {
-  color: red; }
+body {
+  position: relative;
+  font-size: 12px; }
+
+a {
+  text-decoration: none; }
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 1000px; }
+
+/*头部开始*/
+#header {
+  box-shadow: 0 2px 2px #ddd; }
+
+.mfw-header {
+  width: 1000px;
+  height: 58px;
+  line-height: 58px;
+  margin: 0 auto;
+  background-color: #fff; }
+  .mfw-header .logo {
+    float: left;
+    padding: 13px 0; }
+    .mfw-header .logo a {
+      display: block;
+      width: 136px;
+      height: 33px;
+      background: url(../images/header-small-sprites.png) no-repeat 0 0; }
+  .mfw-header .nav {
+    float: left;
+    padding: 0 10px 0 25px;
+    font-size: 14px; }
+    .mfw-header .nav li {
+      float: left; }
+      .mfw-header .nav li a {
+        display: inline-block;
+        padding: 0 16px;
+        color: #333; }
+  .mfw-header .login {
+    float: right;
+    height: 26px;
+    padding: 16px 0; }
+    .mfw-header .login a {
+      display: inline-block;
+      float: left;
+      width: 26px;
+      height: 26px;
+      color: #ff9d00;
+      font-size: 14px; }
+    .mfw-header .login .weibo-login,
+    .mfw-header .login .qq-login,
+    .mfw-header .login .weixin-login {
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+      margin-right: 10px; }
+    .mfw-header .login .weibo-login {
+      background: url(../images/header-sprites13.png) no-repeat 0 -50px; }
+    .mfw-header .login .qq-login {
+      background: url(../images/header-sprites13.png) no-repeat -30px -50px; }
+    .mfw-header .login .weixin-login {
+      background: url(../images/header-sprites13.png) no-repeat 0 -165px; }
+    .mfw-header .login .login-in,
+    .mfw-header .login .reg {
+      display: inline-block;
+      width: auto;
+      line-height: 26px; }
+    .mfw-header .login .split {
+      display: inline-block;
+      float: left;
+      line-height: 26px;
+      margin: 0 10px;
+      color: #c9c9c9; }
+
+/*头部结束*/

@@ -13,6 +13,7 @@ gulp.task('server', function() {
 
     // 在['scss']这里的含义：先执行完成scss编译任务，在执行浏览器刷新
     gulp.watch("assets/scss/*.scss", ['scss']).on('change', reload);
+    gulp.watch("assets/js/*.js").on('change', reload);
     gulp.watch("./*.html").on('change', reload);
 });
 

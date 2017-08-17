@@ -6,7 +6,8 @@
 
 body {
   position: relative;
-  font-size: 12px; }
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti; }
 
 a {
   text-decoration: none; }
@@ -81,3 +82,41 @@ a {
       color: #c9c9c9; }
 
 /*头部结束*/
+/*轮播开始*/
+#slider {
+  margin: 0 auto; }
+  #slider #slider-box {
+    height: 421px; }
+  #slider .show {
+    position: relative; }
+    #slider .show li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none; }
+      #slider .show li img {
+        height: 421px; }
+      #slider .show li .date {
+        position: absolute;
+        top: 20px;
+        left: 130px;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+        #slider .show li .date .day {
+          font-size: 30px;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+        #slider .show li .date h3 {
+          font-size: 20px;
+          font-weight: normal; }
+      #slider .show li p {
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: -263px;
+        font-size: 14px;
+        color: #fff; }
+        #slider .show li p a {
+          color: #ff9900; }
+    #slider .show .first {
+      display: block; }

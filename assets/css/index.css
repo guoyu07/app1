@@ -354,5 +354,94 @@ a {
   #main .wrapper {
     float: right;
     width: 700px; }
+    #main .wrapper .hot .hot-nav {
+      height: 36px;
+      line-height: 36px;
+      font-size: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e4e4e4; }
+      #main .wrapper .hot .hot-nav .nav-bt {
+        float: left; }
+        #main .wrapper .hot .hot-nav .nav-bt li {
+          float: left;
+          text-align: center; }
+          #main .wrapper .hot .hot-nav .nav-bt li:first-child {
+            width: 170px;
+            padding-bottom: 6px;
+            border-bottom: 3px solid #ff9d00; }
+            #main .wrapper .hot .hot-nav .nav-bt li:first-child a {
+              font-size: 18px;
+              color: #ff9d00;
+              cursor: pointer; }
+            #main .wrapper .hot .hot-nav .nav-bt li:first-child span {
+              display: inline-block;
+              line-height: 20px;
+              margin-left: 7px;
+              padding: 0 10px 0 8px;
+              font-size: 12px;
+              color: #666;
+              vertical-align: 2px;
+              border: 1px solid #e5e5e5; }
+              #main .wrapper .hot .hot-nav .nav-bt li:first-child span:hover {
+                color: #fff;
+                border-color: #ff9d00;
+                background-color: #ff9d00; }
+              #main .wrapper .hot .hot-nav .nav-bt li:first-child span:hover i {
+                background-position: 0 -140px; }
+              #main .wrapper .hot .hot-nav .nav-bt li:first-child span i {
+                display: inline-block;
+                width: 11px;
+                height: 8px;
+                margin: 6px 5px 0 0;
+                background: url(../images/index-sprites9.png) no-repeat 0 -130px; }
+          #main .wrapper .hot .hot-nav .nav-bt li:nth-child(2) {
+            padding: 0 10px 0 85px; }
+            #main .wrapper .hot .hot-nav .nav-bt li:nth-child(2) a {
+              font-size: 18px;
+              color: #333; }
+              #main .wrapper .hot .hot-nav .nav-bt li:nth-child(2) a:hover {
+                color: #ff9d00; }
+              #main .wrapper .hot .hot-nav .nav-bt li:nth-child(2) a img {
+                float: left;
+                height: 50px;
+                margin-top: -23px;
+                margin-left: -75px;
+                vertical-align: middle; }
+          #main .wrapper .hot .hot-nav .nav-bt li:nth-child(3) {
+            width: 120px;
+            font-size: 18px; }
+            #main .wrapper .hot .hot-nav .nav-bt li:nth-child(3) a {
+              color: #333; }
+              #main .wrapper .hot .hot-nav .nav-bt li:nth-child(3) a:hover {
+                color: #ff9d00; }
+          #main .wrapper .hot .hot-nav .nav-bt li:nth-child(4) {
+            margin-right: 20px; }
+            #main .wrapper .hot .hot-nav .nav-bt li:nth-child(4) a {
+              font-size: 12px;
+              color: #ff9d00; }
+              #main .wrapper .hot .hot-nav .nav-bt li:nth-child(4) a i {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                margin: 9px 4px 0 0;
+                vertical-align: -3px;
+                background: url(../images/index-sprites9.png) no-repeat -100px -30px; }
+          #main .wrapper .hot .hot-nav .nav-bt li:nth-child(5) {
+            width: 140px; }
+            #main .wrapper .hot .hot-nav .nav-bt li:nth-child(5) a {
+              display: block;
+              height: 36px;
+              text-align: center;
+              color: #fff;
+              border-radius: 4px;
+              background-color: #ff9d00; }
+              #main .wrapper .hot .hot-nav .nav-bt li:nth-child(5) a i {
+                display: inline-block;
+                width: 18px;
+                height: 17px;
+                margin-right: 5px;
+                vertical-align: -3px;
+                background: url(../images/index-sprites9.png) no-repeat 0 0; }
 
 /*正文结束*/

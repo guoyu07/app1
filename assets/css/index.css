@@ -19,6 +19,7 @@ a {
 
 /*头部开始*/
 #header {
+  margin: 0 auto;
   box-shadow: 0 2px 2px #ddd; }
 
 .mfw-header {
@@ -206,3 +207,152 @@ a {
           background: url(../images/header-sprites13.png) no-repeat 0 -110px; }
 
 /*轮播结束*/
+/*正文开始*/
+.box-hd {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 12px; }
+  .box-hd .title {
+    float: left;
+    font-size: 18px;
+    font-weight: normal; }
+  .box-hd a {
+    float: right;
+    color: #666; }
+
+#main {
+  width: 1000px;
+  margin: 0 auto;
+  /*侧边栏开始*/
+  /*侧边栏结束*/ }
+  #main .aside {
+    float: left;
+    width: 260px; }
+    #main .aside .box-travaller {
+      height: 295px;
+      margin-bottom: 35px; }
+      #main .aside .box-travaller .box-slider ul {
+        position: relative; }
+        #main .aside .box-travaller .box-slider ul li {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none; }
+          #main .aside .box-travaller .box-slider ul li:first-child {
+            display: block; }
+          #main .aside .box-travaller .box-slider ul li .img {
+            overflow: hidden;
+            height: 140px; }
+          #main .aside .box-travaller .box-slider ul li h3 {
+            height: 26px;
+            line-height: 26px;
+            margin: 10px 0 5px; }
+            #main .aside .box-travaller .box-slider ul li h3 a {
+              font-size: 16px;
+              font-weight: normal;
+              color: #333; }
+          #main .aside .box-travaller .box-slider ul li p {
+            height: 60px;
+            line-height: 20px;
+            font-size: 14px;
+            color: #666; }
+    #main .aside .box-gonglve {
+      margin-bottom: 30px; }
+      #main .aside .box-gonglve .box-bd .img {
+        margin-bottom: 10px; }
+        #main .aside .box-gonglve .box-bd .img a img {
+          display: block; }
+      #main .aside .box-gonglve .box-bd h3 {
+        width: 260px;
+        height: 24px;
+        line-height: 24px;
+        margin: 10px 0 20px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        #main .aside .box-gonglve .box-bd h3 a {
+          color: #333; }
+      #main .aside .box-gonglve .box-bd ul li {
+        width: 260px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 14px;
+        color: #666;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+        #main .aside .box-gonglve .box-bd ul li a {
+          color: #ff9d00; }
+    #main .aside .action .box-gonglve .box-hd a {
+      color: #ff9d00; }
+    #main .aside .action .box-gonglve .scrollbar ul {
+      height: 390px;
+      overflow: hidden; }
+      #main .aside .action .box-gonglve .scrollbar ul li {
+        height: 40px;
+        padding: 5px;
+        margin-bottom: 5px; }
+        #main .aside .action .box-gonglve .scrollbar ul li:hover {
+          background-color: #f8f8f8; }
+        #main .aside .action .box-gonglve .scrollbar ul li img {
+          display: block;
+          float: left;
+          margin-right: 8px; }
+        #main .aside .action .box-gonglve .scrollbar ul li p {
+          float: left;
+          width: 200px;
+          line-height: 20px;
+          color: #ff9d00;
+          font-size: 14px; }
+        #main .aside .action .box-gonglve .scrollbar ul li span {
+          color: #666; }
+    #main .aside .jion {
+      margin-bottom: 30px; }
+      #main .aside .jion .box-bd ul {
+        margin-top: 10px; }
+        #main .aside .jion .box-bd ul li {
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #666; }
+          #main .aside .jion .box-bd ul li a {
+            color: #666; }
+            #main .aside .jion .box-bd ul li a span {
+              float: right;
+              color: #999; }
+            #main .aside .jion .box-bd ul li a i {
+              margin-left: 6px;
+              padding-left: 8px;
+              font-size: 10px;
+              font-style: normal;
+              color: #d0122b;
+              background: url("../images/sprite.png") 0 -27px no-repeat; }
+          #main .aside .jion .box-bd ul li:hover span {
+            color: #ff9d00; }
+          #main .aside .jion .box-bd ul li:hover a {
+            color: #ff9d00; }
+    #main .aside .news {
+      margin-bottom: 30px; }
+      #main .aside .news h3 {
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 12px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #333; }
+      #main .aside .news ul li {
+        height: 30px;
+        line-height: 30px; }
+        #main .aside .news ul li a {
+          margin-left: 5px;
+          color: #666; }
+          #main .aside .news ul li a:hover {
+            text-decoration: underline; }
+  #main .wrapper {
+    float: right;
+    width: 700px; }
+
+/*正文结束*/

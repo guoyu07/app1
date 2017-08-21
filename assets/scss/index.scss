@@ -20,13 +20,12 @@ a {
     width: 100%;
     margin: 0 auto;
     min-height: 1000px;
-}
-
-//
+} //
 
 /*头部开始*/
 
 #header {
+    margin: 0 auto;
     box-shadow: 0 2px 2px #ddd;
 }
 
@@ -105,9 +104,7 @@ a {
             color: #c9c9c9;
         }
     }
-}
-
-//
+} //
 
 /*头部结束*/
 
@@ -269,7 +266,298 @@ a {
             }
         }
     }
+} //
+
+/*轮播结束*/
+
+
+/*正文开始*/
+
+.box-hd {
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 12px;
+    .title {
+        float: left;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    a {
+        float: right;
+        color: #666;
+    }
+}
+
+#main {
+    width: 1000px;
+    margin: 0 auto;
+    /*侧边栏开始*/
+    .aside {
+        float: left;
+        width: 260px;
+        .box-travaller {
+            height: 295px;
+            margin-bottom: 35px;
+
+            .box-slider {
+                ul {
+                    position: relative;
+                    li {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: none;
+                        &:first-child {
+                            display: block;
+                        }
+                        .img {
+                            overflow: hidden;
+                            height: 140px;
+                        }
+                        h3 {
+                            height: 26px;
+                            line-height: 26px;
+                            margin: 10px 0 5px;
+
+                            a {
+                                font-size: 16px;
+                                font-weight: normal;
+                                color: #333;
+                            }
+                        }
+                        p {
+                            height: 60px;
+                            line-height: 20px;
+                            font-size: 14px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+        .box-gonglve {
+            margin-bottom: 30px;
+            .box-bd {
+                .img {
+                    margin-bottom: 10px;
+                    a {
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+                h3 {
+                    width: 260px;
+                    height: 24px;
+                    line-height: 24px;
+                    margin: 10px 0 20px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #333;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    a {
+                        color: #333;
+                    }
+                }
+                ul {
+                    li {
+                        width: 260px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 14px;
+                        color: #666;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        a {
+                            color: #ff9d00;
+                        }
+                    }
+                }
+            }
+        }
+        .action {
+            .box-gonglve {
+                .box-hd {
+                    a {
+                        color: #ff9d00;
+                    }
+                }
+                .scrollbar {
+
+                    ul {
+                        height: 390px;
+                        overflow: hidden;
+                        li {
+                            height: 40px;
+                            padding: 5px;
+                            margin-bottom: 5px;
+                            &:hover {
+                                background-color: #f8f8f8;
+                            }
+                            img {
+                                display: block;
+                                float: left;
+                                margin-right: 8px;
+                            }
+                            p {
+                                float: left;
+                                width: 200px;
+                                line-height: 20px;
+                                color: #ff9d00;
+                                font-size: 14px;
+                            }
+                            span {
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .jion {
+            margin-bottom: 30px;
+            .box-bd {
+                ul {
+                    margin-top: 10px;
+                    li {
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 14px;
+                        color: #666;
+
+                        a {
+                            color: #666;
+                            span {
+                                float: right;
+                                color: #999;
+                            }
+                            i {
+                                margin-left: 6px;
+                                padding-left: 8px;
+                                font-size: 10px;
+                                font-style: normal;
+                                color: #d0122b;
+                                background: url('../images/sprite.png') 0 -27px no-repeat
+                            }
+                        }
+                        &:hover span {
+                            color: #ff9d00;
+                        }
+                        &:hover a {
+                            color: #ff9d00;
+                        }
+                    }
+                }
+            }
+        }
+        .news {
+            margin-bottom: 30px;
+            h3 {
+                height: 35px;
+                line-height: 35px;
+                margin-bottom: 12px;
+                font-size: 18px;
+                font-weight: normal;
+                color: #333;
+            }
+            ul {
+                li {
+                    height: 30px;
+                    line-height: 30px;
+                    a {
+                        margin-left: 5px;
+                        color: #666;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*侧边栏结束*/
+    .wrapper {
+        float: right;
+        width: 700px;
+    }
 }
 
 
-/*轮播结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*正文结束*/

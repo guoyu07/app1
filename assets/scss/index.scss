@@ -19,7 +19,7 @@ a {
 #container {
     width: 100%;
     margin: 0 auto;
-    min-height: 1000px;
+    overflow: hidden;
 } //
 
 /*头部开始*/
@@ -291,6 +291,7 @@ a {
 #main {
     width: 1000px;
     margin: 0 auto;
+    overflow: hidden;
     /*侧边栏开始*/
     .aside {
         float: left;
@@ -757,216 +758,211 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
 
 /*正文结束*/
+
+
+/*脚部开始*/
+
+#footer {
+    clear: both;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    line-height: 22px;
+    color: #c2c2c2;
+    background-color: #3c3c3c;
+    .footer-content {
+        width: 1000px;
+        margin: 0 auto;
+        .ft-info {
+            padding: 30px 8px 40px;
+            border-bottom: 1px solid #575a5b;
+            overflow: hidden;
+            dl {
+                float: left;
+                width: 200px;
+                margin-right: 68px;
+                &.service {
+                    width: 135px;
+                    margin-right: 80px;
+                    dt {
+                        text-align: center;
+                    }
+                }
+                dt {
+                    height: 30px;
+                    font-size: 14px;
+                }
+                dd {
+                    strong {
+                        color: #ff9d00;
+                        font-weight: normal;
+                    }
+                    a {
+                        color: #c2c2c2;
+                        &.heightlight {
+                            color: #ff9d00;
+                            &:hover {
+                                color: #ff9d00;
+                            }
+                        }
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                ul {
+                    width: 170px;
+                    li {
+
+                        float: left;
+                        width: 85px;
+                        &:last-child {
+                            clear: left;
+                        }
+                        a {
+                            color: #c2c2c2;
+                            &.heightlight {
+                                color: #ff9d00;
+                                &:hover {
+                                    color: #ff9d00;
+                                }
+                            }
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                &.ewm {
+                    float: right;
+                    width: 230px;
+                    padding-top: 22px;
+                    line-height: 1.4em;
+                    margin: 0;
+
+                    dd {
+                        float: right;
+                        width: 100px;
+                        margin: 0;
+                        text-align: center;
+                        .fwh {
+                            display: block;
+                            height: 90px;
+                            margin: 0 0 8px 6px;
+                            background: url(../images/qr_tejia4.png) no-repeat;
+                        }
+                        .dyh {
+                            display: block;
+                            height: 90px;
+                            margin: 0 0 8px 6px;
+                            background: url(../images/qr_mfw4.gif) no-repeat;
+                        }
+                        &:last-child {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+                &.social {
+                    clear: both;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding-top: 25px;
+                    text-align: center;
+                    dt {
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 16px;
+                    }
+                    dd {
+                        padding: 5px 0;
+                        a {
+                            margin: 0 6px;
+                        }
+                        .weibo {
+                            display: inline-block;
+                            width: 28px;
+                            height: 28px;
+                            background: url(../images/mfw-footer-sprite5.png) no-repeat 0 0;
+                        }
+                        .qqt {
+                            display: inline-block;
+                            width: 28px;
+                            height: 28px;
+                            background: url(../images/mfw-footer-sprite5.png) no-repeat -30px 0;
+                        }
+                        .qzone {
+                            display: inline-block;
+                            width: 28px;
+                            height: 28px;
+                            background: url(../images/mfw-footer-sprite5.png) no-repeat -60px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .links {
+            padding: 17px 0 17px 8px;
+            border-bottom: 1px solid #575a5b;
+            a {
+                display: inline-block;
+                margin-right: 12px;
+                color: #c2c2c2;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .copyright {
+            padding: 12px 0;
+            >a {
+                float: left;
+                color: #c2c2c2;
+                .mfw-logo {
+                    float: left;
+                    margin: 2px 20px 0 0;
+                    width: 136px;
+                    height: 39px;
+                    background: url(../images/mfw-footer-sprite5.png) no-repeat 0 -30px;
+                }
+            }
+            p {
+                a {
+                    color: #c2c2c2;
+                }
+                .heightlight {
+                    margin-left: 5px;
+                    color: #ff9d00;
+                }
+                span {
+                    color: #ff9d00;
+                }
+            }
+            .safety {
+                float: right;
+                padding: 5px 8px 0 0;
+                a {
+                    float: left;
+                    width: 90px;
+                    height: 30px;
+                    margin-left: 10px;
+                    background: url(../images/mfw-footer-sprite5.png) no-repeat;
+                }
+                .s-a {
+                    background-position: 0 -70px;
+                }
+                .s-b {
+                    background-position: 0 -110px;
+                }
+                .s-c {
+                    background-position: 0 -150px;
+                }
+            }
+        }
+    }
+}
+
+//
+
+/*脚部结束*/

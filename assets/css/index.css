@@ -15,7 +15,7 @@ a {
 #container {
   width: 100%;
   margin: 0 auto;
-  min-height: 1000px; }
+  overflow: hidden; }
 
 /*头部开始*/
 #header {
@@ -223,6 +223,7 @@ a {
 #main {
   width: 1000px;
   margin: 0 auto;
+  overflow: hidden;
   /*侧边栏开始*/
   /*侧边栏结束*/ }
   #main .aside {
@@ -559,3 +560,152 @@ a {
           background-color: #ff8a00; }
 
 /*正文结束*/
+/*脚部开始*/
+#footer {
+  clear: both;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  line-height: 22px;
+  color: #c2c2c2;
+  background-color: #3c3c3c; }
+  #footer .footer-content {
+    width: 1000px;
+    margin: 0 auto; }
+    #footer .footer-content .ft-info {
+      padding: 30px 8px 40px;
+      border-bottom: 1px solid #575a5b;
+      overflow: hidden; }
+      #footer .footer-content .ft-info dl {
+        float: left;
+        width: 200px;
+        margin-right: 68px; }
+        #footer .footer-content .ft-info dl.service {
+          width: 135px;
+          margin-right: 80px; }
+          #footer .footer-content .ft-info dl.service dt {
+            text-align: center; }
+        #footer .footer-content .ft-info dl dt {
+          height: 30px;
+          font-size: 14px; }
+        #footer .footer-content .ft-info dl dd strong {
+          color: #ff9d00;
+          font-weight: normal; }
+        #footer .footer-content .ft-info dl dd a {
+          color: #c2c2c2; }
+          #footer .footer-content .ft-info dl dd a.heightlight {
+            color: #ff9d00; }
+            #footer .footer-content .ft-info dl dd a.heightlight:hover {
+              color: #ff9d00; }
+          #footer .footer-content .ft-info dl dd a:hover {
+            color: #fff; }
+        #footer .footer-content .ft-info dl ul {
+          width: 170px; }
+          #footer .footer-content .ft-info dl ul li {
+            float: left;
+            width: 85px; }
+            #footer .footer-content .ft-info dl ul li:last-child {
+              clear: left; }
+            #footer .footer-content .ft-info dl ul li a {
+              color: #c2c2c2; }
+              #footer .footer-content .ft-info dl ul li a.heightlight {
+                color: #ff9d00; }
+                #footer .footer-content .ft-info dl ul li a.heightlight:hover {
+                  color: #ff9d00; }
+              #footer .footer-content .ft-info dl ul li a:hover {
+                color: #fff; }
+        #footer .footer-content .ft-info dl.ewm {
+          float: right;
+          width: 230px;
+          padding-top: 22px;
+          line-height: 1.4em;
+          margin: 0; }
+          #footer .footer-content .ft-info dl.ewm dd {
+            float: right;
+            width: 100px;
+            margin: 0;
+            text-align: center; }
+            #footer .footer-content .ft-info dl.ewm dd .fwh {
+              display: block;
+              height: 90px;
+              margin: 0 0 8px 6px;
+              background: url(../images/qr_tejia4.png) no-repeat; }
+            #footer .footer-content .ft-info dl.ewm dd .dyh {
+              display: block;
+              height: 90px;
+              margin: 0 0 8px 6px;
+              background: url(../images/qr_mfw4.gif) no-repeat; }
+            #footer .footer-content .ft-info dl.ewm dd:last-child {
+              margin-right: 30px; }
+        #footer .footer-content .ft-info dl.social {
+          clear: both;
+          width: 100%;
+          margin: 0 auto;
+          padding-top: 25px;
+          text-align: center; }
+          #footer .footer-content .ft-info dl.social dt {
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px; }
+          #footer .footer-content .ft-info dl.social dd {
+            padding: 5px 0; }
+            #footer .footer-content .ft-info dl.social dd a {
+              margin: 0 6px; }
+            #footer .footer-content .ft-info dl.social dd .weibo {
+              display: inline-block;
+              width: 28px;
+              height: 28px;
+              background: url(../images/mfw-footer-sprite5.png) no-repeat 0 0; }
+            #footer .footer-content .ft-info dl.social dd .qqt {
+              display: inline-block;
+              width: 28px;
+              height: 28px;
+              background: url(../images/mfw-footer-sprite5.png) no-repeat -30px 0; }
+            #footer .footer-content .ft-info dl.social dd .qzone {
+              display: inline-block;
+              width: 28px;
+              height: 28px;
+              background: url(../images/mfw-footer-sprite5.png) no-repeat -60px 0; }
+    #footer .footer-content .links {
+      padding: 17px 0 17px 8px;
+      border-bottom: 1px solid #575a5b; }
+      #footer .footer-content .links a {
+        display: inline-block;
+        margin-right: 12px;
+        color: #c2c2c2; }
+        #footer .footer-content .links a:hover {
+          color: #fff; }
+    #footer .footer-content .copyright {
+      padding: 12px 0; }
+      #footer .footer-content .copyright > a {
+        float: left;
+        color: #c2c2c2; }
+        #footer .footer-content .copyright > a .mfw-logo {
+          float: left;
+          margin: 2px 20px 0 0;
+          width: 136px;
+          height: 39px;
+          background: url(../images/mfw-footer-sprite5.png) no-repeat 0 -30px; }
+      #footer .footer-content .copyright p a {
+        color: #c2c2c2; }
+      #footer .footer-content .copyright p .heightlight {
+        margin-left: 5px;
+        color: #ff9d00; }
+      #footer .footer-content .copyright p span {
+        color: #ff9d00; }
+      #footer .footer-content .copyright .safety {
+        float: right;
+        padding: 5px 8px 0 0; }
+        #footer .footer-content .copyright .safety a {
+          float: left;
+          width: 90px;
+          height: 30px;
+          margin-left: 10px;
+          background: url(../images/mfw-footer-sprite5.png) no-repeat; }
+        #footer .footer-content .copyright .safety .s-a {
+          background-position: 0 -70px; }
+        #footer .footer-content .copyright .safety .s-b {
+          background-position: 0 -110px; }
+        #footer .footer-content .copyright .safety .s-c {
+          background-position: 0 -150px; }
+
+/*脚部结束*/

@@ -358,6 +358,7 @@ a {
       height: 36px;
       line-height: 36px;
       font-size: 16px;
+      margin-bottom: 20px;
       padding-bottom: 8px;
       border-bottom: 1px solid #e4e4e4; }
       #main .wrapper .hot .hot-nav .nav-bt {
@@ -443,5 +444,118 @@ a {
                 margin-right: 5px;
                 vertical-align: -3px;
                 background: url(../images/index-sprites9.png) no-repeat 0 0; }
+    #main .wrapper .hot .hot-content .hot-list .hot-item {
+      height: 150px;
+      padding: 15px 0; }
+      #main .wrapper .hot .hot-content .hot-list .hot-item .hot-img {
+        float: left;
+        overflow: hidden; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-img a img {
+          display: inline;
+          width: 220px;
+          height: 150px; }
+      #main .wrapper .hot .hot-content .hot-list .hot-item .hot-title {
+        float: right;
+        width: 455px;
+        height: 117px; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-title p {
+          height: 26px;
+          line-height: 26px;
+          margin-bottom: 15px; }
+          #main .wrapper .hot .hot-content .hot-list .hot-item .hot-title p a {
+            font-size: 18px;
+            color: #333; }
+            #main .wrapper .hot .hot-content .hot-list .hot-item .hot-title p a:hover {
+              color: #ff9d00; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-title span a {
+          line-height: 20px;
+          font-size: 14px;
+          color: #666;
+          word-wrap: break-word; }
+      #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom {
+        float: right;
+        width: 455px;
+        height: 33px; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul li {
+          float: left;
+          height: 33px;
+          line-height: 33px;
+          margin-right: 10px; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .place i {
+          float: left;
+          width: 14px;
+          height: 16px;
+          margin: 8px 5px 0 0;
+          background: url(../images/index-sprites9.png) no-repeat 0 -50px; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .place a {
+          color: #666; }
+          #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .place a:hover {
+            color: #ff9d00;
+            text-decoration: underline; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .user {
+          line-height: 33px; }
+          #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .user a {
+            line-height: 33px;
+            color: #ff9d00; }
+            #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .user a:hover {
+              text-decoration: underline; }
+            #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .user a img {
+              width: 16px;
+              height: 16px;
+              margin-right: 5px;
+              vertical-align: -3px;
+              border-radius: 50%; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .nums {
+          font-size: 14px;
+          color: #999; }
+          #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .nums i {
+            float: left;
+            width: 18px;
+            height: 14px;
+            margin: 9px 5px 0 0;
+            background: url(../images/index-sprites9.png) no-repeat -30px -50px; }
+        #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .ding {
+          float: right;
+          height: 33px;
+          line-height: 33px;
+          font-size: 14px;
+          color: #ff9d00; }
+          #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .ding i {
+            display: inline-block;
+            width: 38px;
+            height: 33px;
+            vertical-align: middle;
+            background: url(../images/index-sprites9.png) no-repeat -60px 0; }
+          #main .wrapper .hot .hot-content .hot-list .hot-item .hot-bottom ul .ding span {
+            vertical-align: middle;
+            margin-right: 10px; }
+    #main .wrapper .hot .hot-content .pagination {
+      padding: 20px 5px;
+      line-height: 24px;
+      font-size: 12px;
+      text-align: right;
+      color: #999; }
+      #main .wrapper .hot .hot-content .pagination span {
+        margin-right: 12px; }
+      #main .wrapper .hot .hot-content .pagination a {
+        display: inline-block;
+        margin: 0 1px;
+        padding: 0 7px;
+        color: #666;
+        border-radius: 4px; }
+        #main .wrapper .hot .hot-content .pagination a:hover {
+          background-color: #efefef; }
+      #main .wrapper .hot .hot-content .pagination .pg-current {
+        display: inline-block;
+        margin: 0 1px;
+        padding: 0 7px;
+        color: #fff;
+        border-radius: 4px;
+        background-color: #ff9d00; }
+      #main .wrapper .hot .hot-content .pagination .pg-next {
+        background-color: #ff9d00;
+        color: #fff; }
+        #main .wrapper .hot .hot-content .pagination .pg-next:hover {
+          background-color: #ff8a00; }
 
 /*正文结束*/

@@ -487,6 +487,7 @@ a {
                 height: 36px;
                 line-height: 36px;
                 font-size: 16px;
+                margin-bottom: 20px;
                 padding-bottom: 8px;
                 border-bottom: 1px solid #e4e4e4;
                 .nav-bt {
@@ -595,9 +596,235 @@ a {
                     }
                 }
             }
+            .hot-content {
+                .hot-list {
+                    .hot-item {
+                        height: 150px;
+                        padding: 15px 0;
+                        .hot-img {
+                            float: left;
+                            overflow: hidden;
+                            a {
+                                img {
+                                    display: inline;
+                                    width: 220px;
+                                    height: 150px;
+                                }
+                            }
+                        }
+                        .hot-title {
+                            float: right;
+                            width: 455px;
+                            height: 117px;
+                            p {
+                                height: 26px;
+                                line-height: 26px;
+                                margin-bottom: 15px;
+                                a {
+
+                                    font-size: 18px;
+                                    color: #333;
+                                    &:hover {
+                                        color: #ff9d00;
+                                    }
+                                }
+                            }
+                            span {
+                                a {
+                                    line-height: 20px;
+                                    font-size: 14px;
+                                    color: #666;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                        .hot-bottom {
+                            float: right;
+                            width: 455px;
+                            height: 33px;
+                            ul {
+                                li {
+                                    float: left;
+                                    height: 33px;
+                                    line-height: 33px;
+                                    margin-right: 10px;
+                                }
+                                .place {
+
+                                    i {
+                                        float: left;
+                                        width: 14px;
+                                        height: 16px;
+                                        margin: 8px 5px 0 0;
+                                        background: url(../images/index-sprites9.png) no-repeat 0 -50px;
+                                    }
+                                    a {
+                                        color: #666;
+                                        &:hover {
+                                            color: #ff9d00;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                .user {
+                                    line-height: 33px;
+                                    a {
+                                        line-height: 33px;
+                                        color: #ff9d00;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                        img {
+                                            width: 16px;
+                                            height: 16px;
+                                            margin-right: 5px;
+                                            vertical-align: -3px;
+                                            border-radius: 50%;
+                                        }
+                                    }
+                                }
+                                .nums {
+                                    font-size: 14px;
+                                    color: #999;
+                                    i {
+                                        float: left;
+                                        width: 18px;
+                                        height: 14px;
+                                        margin: 9px 5px 0 0;
+                                        background: url(../images/index-sprites9.png) no-repeat -30px -50px;
+                                    }
+                                }
+                                .ding {
+                                    float: right;
+                                    height: 33px;
+                                    line-height: 33px;
+                                    font-size: 14px;
+                                    color: #ff9d00;
+                                    i {
+                                        display: inline-block;
+                                        width: 38px;
+                                        height: 33px;
+                                        vertical-align: middle;
+                                        background: url(../images/index-sprites9.png) no-repeat -60px 0;
+                                    }
+                                    span {
+                                        vertical-align: middle;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagination {
+                    padding: 20px 5px;
+                    line-height: 24px;
+                    font-size: 12px;
+                    text-align: right;
+                    color: #999;
+                    span {
+                        margin-right: 12px;
+                    }
+                    a {
+                        display: inline-block;
+                        margin: 0 1px;
+                        padding: 0 7px;
+                        color: #666;
+                        border-radius: 4px;
+                        &:hover {
+                            background-color: #efefef;
+                        }
+                    }
+                    .pg-current {
+                        display: inline-block;
+                        margin: 0 1px;
+                        padding: 0 7px;
+                        color: #fff;
+                        border-radius: 4px;
+                        background-color: #ff9d00;
+                    }
+                    .pg-next {
+                        background-color: #ff9d00;
+                        color: #fff;
+                        &:hover {
+                            background-color: #ff8a00;
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,6 +10,9 @@ body {
   font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti; }
 
 a {
+  background-color: transparent;
+  color: #ff9d00;
+  cursor: pointer;
   text-decoration: none; }
 
 #container {

@@ -1,0 +1,429 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  position: relative;
+  font-size: 12px;
+  font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", SimSun, "PingFang SC", STHeiti; }
+
+a {
+  background-color: transparent;
+  color: #ff9d00;
+  cursor: pointer;
+  text-decoration: none; }
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/*头部开始*/
+#header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  margin: 0 auto; }
+
+.mfw-header {
+  width: 1000px;
+  height: 58px;
+  line-height: 58px;
+  margin: 0 auto;
+  background-color: transparent; }
+  .mfw-header .logo {
+    float: left;
+    padding: 13px 0; }
+    .mfw-header .logo a {
+      display: block;
+      width: 136px;
+      height: 33px;
+      background: url(../images/header-small-sprites.png) no-repeat 0 0; }
+  .mfw-header .nav {
+    float: left;
+    padding: 0 10px 0 25px;
+    font-size: 14px; }
+    .mfw-header .nav li {
+      float: left; }
+      .mfw-header .nav li a {
+        display: inline-block;
+        padding: 0 16px;
+        color: #333; }
+  .mfw-header .login {
+    float: right;
+    height: 26px;
+    padding: 16px 0; }
+    .mfw-header .login a {
+      display: inline-block;
+      float: left;
+      width: 26px;
+      height: 26px;
+      color: #ff9d00;
+      font-size: 14px; }
+    .mfw-header .login .weibo-login,
+    .mfw-header .login .qq-login,
+    .mfw-header .login .weixin-login {
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+      margin-right: 10px; }
+    .mfw-header .login .weibo-login {
+      background: url(../images/header-sprites13.png) no-repeat 0 -50px; }
+    .mfw-header .login .qq-login {
+      background: url(../images/header-sprites13.png) no-repeat -30px -50px; }
+    .mfw-header .login .weixin-login {
+      background: url(../images/header-sprites13.png) no-repeat 0 -165px; }
+    .mfw-header .login .login-in,
+    .mfw-header .login .reg {
+      display: inline-block;
+      width: auto;
+      line-height: 26px; }
+    .mfw-header .login .split {
+      display: inline-block;
+      float: left;
+      line-height: 26px;
+      margin: 0 10px;
+      color: #c9c9c9; }
+
+/*头部结束*/
+.banner {
+  position: relative;
+  height: 550px;
+  margin: 0 auto; }
+  .banner a {
+    display: block;
+    height: 550px;
+    overflow: hidden; }
+
+.common-title {
+  margin-bottom: 25px; }
+  .common-title h2 {
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: normal;
+    color: #333; }
+
+.common-nav {
+  height: 65px;
+  text-align: center;
+  vertical-align: middle; }
+  .common-nav a {
+    display: inline-block;
+    line-height: 22px;
+    margin: 0 22px 30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: center; }
+    .common-nav a:hover {
+      color: #ff9d00;
+      border-bottom: 3px solid #ff9d00; }
+  .common-nav span {
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    vertical-align: sub;
+    background-color: #eee; }
+
+.des {
+  padding: 40px 0; }
+  .des .des-inner {
+    width: 1000px;
+    margin: 0 auto; }
+    .des .des-inner .des-item {
+      overflow: hidden; }
+      .des .des-inner .des-item .col {
+        float: left;
+        width: 470px;
+        line-height: 24px; }
+        .des .des-inner .des-item .col:first-child {
+          margin-right: 60px; }
+        .des .des-inner .des-item .col dl {
+          padding: 20px 0 20px 100px;
+          border-bottom: 1px dashed #eee; }
+          .des .des-inner .des-item .col dl dt {
+            float: left;
+            display: inline-block;
+            margin-left: -100px;
+            font-size: 16px;
+            color: #333; }
+            .des .des-inner .des-item .col dl dt a {
+              color: #333;
+              text-decoration: underline; }
+              .des .des-inner .des-item .col dl dt a:hover {
+                color: #ff9d00; }
+          .des .des-inner .des-item .col dl dd a {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #666; }
+            .des .des-inner .des-item .col dl dd a:hover {
+              color: #ff9d00;
+              text-decoration: underline; }
+
+.inner-box {
+  width: 1000px;
+  margin: 0 auto; }
+  .inner-box .season-list {
+    overflow: hidden; }
+
+.common-list .col3 {
+  width: 323px; }
+
+.common-list .col4 {
+  width: 238px;
+  margin-right: 12px; }
+
+.season {
+  padding: 40px 0;
+  background-color: #fafafa;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4; }
+
+.list-item {
+  position: relative;
+  float: left;
+  height: 220px;
+  margin: 10px 10px 10px 0;
+  font-size: 20px;
+  background-color: #f2f2f2; }
+  .list-item a {
+    display: block;
+    width: auto;
+    height: auto; }
+    .list-item a img {
+      display: block;
+      width: 100%; }
+
+.row {
+  padding: 40px 0; }
+
+.global {
+  padding: 40px 0;
+  background-color: #fafafa;
+  border-top: 1px solid #e4e4e4; }
+  .global .global-box {
+    width: 1000px;
+    margin: 0 auto; }
+    .global .global-box h2 {
+      line-height: 30px;
+      margin-bottom: 25px;
+      font-size: 32px;
+      font-weight: normal;
+      color: #666; }
+      .global .global-box h2 span {
+        font-size: 14px;
+        color: #a8a8a8; }
+      .global .global-box h2 a {
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 20px; }
+
+.global-main .item {
+  margin-bottom: 50px;
+  color: #666;
+  overflow: hidden; }
+  .global-main .item dt {
+    line-height: 22px;
+    margin-bottom: 15px;
+    font-size: 20px; }
+  .global-main .item dd {
+    margin-left: -22px; }
+    .global-main .item dd ul {
+      float: left;
+      width: 282px;
+      margin-left: 22px;
+      padding-left: 30px;
+      line-height: 30px;
+      font-size: 14px; }
+      .global-main .item dd ul li.index {
+        float: left;
+        margin-left: -30px;
+        width: 30px;
+        padding: 0;
+        font-size: 20px;
+        font-family: Centaur, Times New Roman;
+        text-transform: uppercase; }
+      .global-main .item dd ul li .usa {
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        background-color: #9f4d31;
+        font-family: sans-serif, Verdana, "Microsoft Yahei", Helvetica, "微软雅黑", "宋体";
+        padding: 1px 3px;
+        color: #fff;
+        vertical-align: middle; }
+      .global-main .item dd ul li a {
+        color: #666; }
+        .global-main .item dd ul li a:hover {
+          text-decoration: underline; }
+        .global-main .item dd ul li a span {
+          font-family: Arial;
+          color: #a8a8a8;
+          word-wrap: break-word;
+          word-break: normal; }
+      .global-main .item dd ul li i {
+        display: inline-block;
+        width: 32px;
+        height: 14px;
+        line-height: 30px;
+        vertical-align: middle;
+        margin-left: 5px;
+        margin-top: -2px;
+        background: url(../images/plaInd-sprite3.png) no-repeat -555px 0; }
+        .global-main .item dd ul li i.china {
+          height: 20px;
+          background: url(../images/flag.jpg) no-repeat; }
+
+/*脚部开始*/
+#footer {
+  clear: both;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  line-height: 22px;
+  color: #c2c2c2;
+  background-color: #3c3c3c; }
+  #footer .footer-content {
+    width: 1000px;
+    margin: 0 auto; }
+    #footer .footer-content .ft-info {
+      padding: 30px 8px 40px;
+      border-bottom: 1px solid #575a5b;
+      overflow: hidden; }
+      #footer .footer-content .ft-info dl {
+        float: left;
+        width: 200px;
+        margin-right: 68px; }
+        #footer .footer-content .ft-info dl.service {
+          width: 135px;
+          margin-right: 80px; }
+          #footer .footer-content .ft-info dl.service dt {
+            text-align: center; }
+        #footer .footer-content .ft-info dl dt {
+          height: 30px;
+          font-size: 14px; }
+        #footer .footer-content .ft-info dl dd strong {
+          color: #ff9d00;
+          font-weight: normal; }
+        #footer .footer-content .ft-info dl dd a {
+          color: #c2c2c2; }
+          #footer .footer-content .ft-info dl dd a.heightlight {
+            color: #ff9d00; }
+            #footer .footer-content .ft-info dl dd a.heightlight:hover {
+              color: #ff9d00; }
+          #footer .footer-content .ft-info dl dd a:hover {
+            color: #fff; }
+        #footer .footer-content .ft-info dl ul {
+          width: 170px; }
+          #footer .footer-content .ft-info dl ul li {
+            float: left;
+            width: 85px; }
+            #footer .footer-content .ft-info dl ul li:last-child {
+              clear: left; }
+            #footer .footer-content .ft-info dl ul li a {
+              color: #c2c2c2; }
+              #footer .footer-content .ft-info dl ul li a.heightlight {
+                color: #ff9d00; }
+                #footer .footer-content .ft-info dl ul li a.heightlight:hover {
+                  color: #ff9d00; }
+              #footer .footer-content .ft-info dl ul li a:hover {
+                color: #fff; }
+        #footer .footer-content .ft-info dl.ewm {
+          float: right;
+          width: 230px;
+          padding-top: 22px;
+          line-height: 1.4em;
+          margin: 0; }
+          #footer .footer-content .ft-info dl.ewm dd {
+            float: right;
+            width: 100px;
+            margin: 0;
+            text-align: center; }
+            #footer .footer-content .ft-info dl.ewm dd .fwh {
+              display: block;
+              height: 90px;
+              margin: 0 0 8px 6px;
+              background: url(../images/qr_tejia4.png) no-repeat; }
+            #footer .footer-content .ft-info dl.ewm dd .dyh {
+              display: block;
+              height: 90px;
+              margin: 0 0 8px 6px;
+              background: url(../images/qr_mfw4.gif) no-repeat; }
+            #footer .footer-content .ft-info dl.ewm dd:last-child {
+              margin-right: 30px; }
+        #footer .footer-content .ft-info dl.social {
+          clear: both;
+          width: 100%;
+          margin: 0 auto;
+          padding-top: 25px;
+          text-align: center; }
+          #footer .footer-content .ft-info dl.social dt {
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px; }
+          #footer .footer-content .ft-info dl.social dd {
+            padding: 5px 0; }
+            #footer .footer-content .ft-info dl.social dd a {
+              margin: 0 6px; }
+            #footer .footer-content .ft-info dl.social dd .weibo {
+              display: inline-block;
+              width: 28px;
+              height: 28px;
+              background: url(../images/mfw-footer-sprite5.png) no-repeat 0 0; }
+            #footer .footer-content .ft-info dl.social dd .qqt {
+              display: inline-block;
+              width: 28px;
+              height: 28px;
+              background: url(../images/mfw-footer-sprite5.png) no-repeat -30px 0; }
+            #footer .footer-content .ft-info dl.social dd .qzone {
+              display: inline-block;
+              width: 28px;
+              height: 28px;
+              background: url(../images/mfw-footer-sprite5.png) no-repeat -60px 0; }
+    #footer .footer-content .links {
+      padding: 17px 0 17px 8px;
+      border-bottom: 1px solid #575a5b; }
+      #footer .footer-content .links a {
+        display: inline-block;
+        margin-right: 12px;
+        color: #c2c2c2; }
+        #footer .footer-content .links a:hover {
+          color: #fff; }
+    #footer .footer-content .copyright {
+      padding: 12px 0; }
+      #footer .footer-content .copyright > a {
+        float: left;
+        color: #c2c2c2; }
+        #footer .footer-content .copyright > a .mfw-logo {
+          float: left;
+          margin: 2px 20px 0 0;
+          width: 136px;
+          height: 39px;
+          background: url(../images/mfw-footer-sprite5.png) no-repeat 0 -30px; }
+      #footer .footer-content .copyright p a {
+        color: #c2c2c2; }
+      #footer .footer-content .copyright p .heightlight {
+        margin-left: 5px;
+        color: #ff9d00; }
+      #footer .footer-content .copyright p span {
+        color: #ff9d00; }
+      #footer .footer-content .copyright .safety {
+        float: right;
+        padding: 5px 8px 0 0; }
+        #footer .footer-content .copyright .safety a {
+          float: left;
+          width: 90px;
+          height: 30px;
+          margin-left: 10px;
+          background: url(../images/mfw-footer-sprite5.png) no-repeat; }
+        #footer .footer-content .copyright .safety .s-a {
+          background-position: 0 -70px; }
+        #footer .footer-content .copyright .safety .s-b {
+          background-position: 0 -110px; }
+        #footer .footer-content .copyright .safety .s-c {
+          background-position: 0 -150px; }
+
+/*脚部结束*/

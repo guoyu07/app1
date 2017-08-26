@@ -112,6 +112,645 @@ a {
 /*头部结束*/
 
 //
+// 正文开始
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 25px 0;
+    color: #666;
+    .aside {
+        float: left;
+        width: 220px;
+        a {
+            display: block;
+            line-height: 46px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #666;
+            border-radius: 3px;
+            &.active {
+                background-color: #ffa800;
+                color: #fff;
+                i {
+                    background-position: -22px 0;
+                }
+            }
+            &:not(.active):hover {
+                background-color: #f0f0f0;
+            }
+            i {
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                margin: 0 10px 0 24px;
+                vertical-align: middle;
+                background: url(../images/i_left4.png) no-repeat;
+                &.i2 {
+                    background-position: 0 -22px;
+                }
+                &.i3 {
+                    background-position: 0 -44px;
+                }
+                &.i4 {
+                    background-position: 0 -66px;
+                }
+                &.i5 {
+                    background-position: 0 -88px;
+                }
+                &.i6 {
+                    background-position: 0 -110px;
+                }
+            }
+        }
+    }
+    .content {
+        float: right;
+        width: 740px;
+        min-height: 480px;
+        padding-left: 40px;
+        .hd {
+            margin: 0 0 20px 0;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #eee;
+            strong {
+                font-size: 24px;
+                font-weight: normal;
+                color: #444;
+            }
+            span {
+                margin-left: 18px;
+                font-size: 14px;
+                color: #999;
+                .progress {
+                    position: relative;
+                    display: inline-block;
+                    width: 110px;
+                    height: 16px;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                    background-color: #bddf7d;
+                    .num {
+                        position: absolute;
+                        right: 3px;
+                        line-height: 16px;
+                        font-size: 12px;
+                        color: #fff;
+                        .on {
+                            height: 16px;
+                            background-color: #add75c;
+                        }
+                    }
+                }
+            }
+        } // 个人信息开始
+        .userinfo {
+            display: none;
+            padding-bottom: 20px;
+            form {
+                dl {
+                    clear: both;
+                    padding-bottom: 15px;
+                    overflow: hidden;
+                    dt {
+                        float: left;
+                        width: 85px;
+                        padding: 6px 10px 0 0;
+                        font-size: 16px;
+                        color: #a1a1a1;
+                        text-align: right;
+                    }
+                    dd {
+                        float: left;
+                        width: 490px;
+                        input {
+                            width: 208px;
+                            height: 18px;
+                            line-height: 18px;
+                            padding: 6px 8px;
+                            margin: 2px 0;
+                            font-size: 14px;
+                            color: #999;
+                            outline: none;
+                            border: 1px solid #d3d3d3;
+                            border-radius: 3px;
+                            transition: box-shadow 0.25s linear 0s;
+
+                            &:focus {
+                                border: 1px solid #ffa800;
+                                box-shadow: 0 0 5px #ffa200;
+                            }
+                        }
+                        label {
+                            float: left;
+                            padding-right: 20px;
+                            line-height: 32px;
+                            font-size: 14px;
+                            cursor: pointer;
+                            .radio {
+                                position: relative;
+                                display: inline-block;
+                                width: 18px;
+                                height: 18px;
+                                line-height: 18px;
+                                margin-right: 6px;
+                                vertical-align: middle;
+                                input {
+                                    position: absolute;
+                                    top: 1px;
+                                    left: 1px;
+                                    width: 16px;
+                                    height: 16px;
+                                    margin: 0;
+                                    opacity: 0;
+                                }
+                                span {
+                                    position: relative;
+                                    display: inline-block;
+                                    width: 16px;
+                                    height: 16px;
+                                    font-size: 14px;
+                                    border-radius: 100%;
+                                    background-color: #fff;
+                                    border: 1px solid #ffa800;
+                                    &:after {
+                                        content: '';
+                                        position: absolute;
+                                        top: 2px;
+                                        right: 2px;
+                                        left: 2px;
+                                        bottom: 2px;
+                                        border-radius: 100%;
+                                        background-color: #fff;
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                        }
+                        textarea {
+                            display: inline-block;
+                            width: 472px;
+                            height: 110px;
+                            line-height: 1.6em;
+                            margin: 2px 0;
+                            padding: 6px 8px;
+                            font-size: 14px;
+                            font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", "PingFang SC", STHeiti;
+                            color: #999;
+                            outline: none;
+                            border-radius: 3px;
+                            resize: none;
+                            transition: box-shadow 0.25s linear 0s;
+                            &:focus {
+                                border: 1px solid #ffa800;
+                                box-shadow: 0 0 5px #ffa200;
+                            }
+                        }
+                        p {
+                            padding-bottom: 5px;
+                            font-size: 14px;
+                            color: #999;
+                            b {
+                                color: #ffa800;
+                                font-weight: normal;
+                            }
+                        }
+                        &.tips {
+                            width: 345px;
+                            padding: 15px 20px;
+                            font-size: 12px;
+                            line-height: 1.8em;
+                            background-color: #f6f6f6;
+                        }
+                        button {
+                            display: block;
+                            width: 112px;
+                            height: 36px;
+                            margin: 0 auto;
+                            font-size: 16px;
+                            color: #fff;
+                            border: none;
+                            text-align: center;
+                            border-radius: 5px;
+                            outline: none;
+                            cursor: pointer;
+                            background-color: #ffa800;
+                        }
+                    }
+                }
+            }
+        } // 个人信息结束
+        // 头像开始
+        .userlogo {
+            display: none;
+            width: 120px;
+            height: 120px;
+
+            .img {
+                padding: 30px 0 20px;
+            }
+            .sub {
+                position: relative;
+                display: inline-block;
+                width: 120px;
+                height: 36px;
+                cursor: pointer;
+                input {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 2;
+                    width: 120px;
+                    height: 36px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                .btn {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: inline-block;
+                    z-index: 1;
+                    width: 120px;
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #fff;
+                    border: 0;
+                    border-radius: 5px;
+                    vertical-align: middle;
+                    background-color: #ffa800;
+                }
+            }
+        } // 头像结束
+        // 绑定设置开始
+        .userbind {
+            display: none;
+            position: relative;
+            .bind-title {
+                padding: 10px 0 20px;
+                font-size: 14px;
+                color: #999;
+            }
+            .bind-item {
+                width: 470px;
+                padding: 25px 0 40px;
+                border-bottom: 1px dashed #d7d7d7;
+                overflow: hidden;
+                &:last-child {
+                    border: 0;
+                }
+                dt {
+                    float: left;
+                    width: 57px;
+                    padding: 4px 10px 0 0;
+                    font-size: 16px;
+                    color: #a1a1a1;
+                    text-align: right;
+                    i {
+                        display: block;
+                        width: 37px;
+                        height: 37px;
+                        border-radius: 4px;
+                        background: url(../images/i_connect.png) no-repeat;
+                        &.qzone {
+                            background-position: 0 -37px;
+                        }
+                    }
+                }
+                dd {
+                    float: left;
+                    width: 385px;
+                    h3 {
+                        font-size: 14px;
+                        font-weight: normal;
+                        line-height: 1.5em;
+                        span {
+                            margin-left: 6px;
+                            color: #444;
+                        }
+                        strong {
+                            margin-right: 6px;
+                            font-size: 18px;
+                            font-weight: normal;
+                        }
+                    }
+                    .btns {
+                        padding: 22px 0 0;
+                        a {
+                            display: inline-block;
+                            width: 145px;
+                            height: 36px;
+                            line-height: 36px;
+                            font-size: 16px;
+                            text-align: center;
+                            color: #fff;
+                            border-radius: 5px;
+                            background-color: #ffa800;
+                            &.jc {
+                                background-color: #98BF37;
+                            }
+                        }
+                    }
+                }
+            }
+            .weixin {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 132px;
+                padding: 20px;
+                color: #999;
+                background-color: #fff;
+                box-shadow: 0 2px 6px #ccc;
+                img {
+                    width: 126px;
+                    height: 123px;
+                    text-align: center;
+                    border: 3px solid #ffa800;
+                }
+                .t1 {
+                    padding: 10px 0 15px;
+                    font-size: 14px;
+                }
+                .t2 {
+                    font-size: 12px;
+                    line-height: 1.6em;
+                }
+                .t3 {
+                    padding-top: 8px;
+                    font-size: 16px;
+                }
+            }
+        } // 绑定设置结束
+        // 账号安全开始
+        .safe {
+            display: none;
+            dl {
+                padding-bottom: 15px;
+                dt {
+                    float: left;
+                    width: 75px;
+                    padding: 4px 10px 0 0;
+                    text-align: right;
+                    font-size: 14px;
+                }
+                dd {
+                    a {
+                        display: inline-block;
+                        padding: 4px 10px 0 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        } // 账号安全结束
+        // home开始
+        .home {
+            display: none;
+            p {
+                font-size: 14px;
+            }
+        } // home结束
+        // 黑名单开始
+        .blacklist {
+            display: none;
+            width: 585px;
+            margin-left: 20px;
+            .inner {
+
+                margin: 0 -18px;
+                padding: 20px;
+                background-color: #efefef;
+                overflow: hidden;
+                .col-search {
+                    float: left;
+                    width: 308px;
+                    height: 360px;
+                    margin-right: 10px;
+                    border: 1px solid #e5e5e5;
+                    background-color: #fff;
+                    dt {
+                        position: relative;
+                        height: 30px;
+                        margin: 9px 9px 0;
+                        input {
+                            width: 238px;
+                            height: 28px;
+                            padding: 0 38px 0 12px;
+                            line-height: 28px;
+                            font-size: 14px;
+                            color: #666;
+                            border: 1px solid #ff9d00;
+                            border-radius: 3px;
+                        }
+                        .search-btn {
+                            position: absolute;
+                            top: 7px;
+                            right: 12px;
+                            width: 17px;
+                            height: 16px;
+                            border: none;
+                            background: url(../images/i_btns4.png) no-repeat -60px -20px;
+                        }
+                    }
+                    dd {
+                        width: auto;
+                        ul {
+                            position: relative;
+                            height: 260px;
+                        }
+                        .black-action {
+                            margin-top: 10px;
+                            text-align: center;
+                            a {
+                                display: inline-block;
+                                height: 30px;
+                                line-height: 30px;
+                                padding: 0 25px;
+                                font-size: 14px;
+                                border-radius: 2px;
+                                color: #fff;
+                                background-color: #ff9d00;
+                            }
+                        }
+                    }
+                }
+                .col-list {
+                    float: left;
+                    width: 259px;
+                    height: 360px;
+                    border: 1px solid #e5e5e5;
+                    background-color: #fff;
+                    dt {
+                        height: 30px;
+                        line-height: 30px;
+                        margin: 9px 20px 0;
+                        font-size: 14px;
+                        text-align: right;
+                        color: #a1a1a1;
+                    }
+                    dd {
+                        padding-left: 20px;
+                        ul {
+                            position: relative;
+                            height: 310px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .tips {
+                    font-size: 12px;
+                    text-align: right;
+                    color: #ffa800;
+                }
+            }
+        } // 黑名单结束
+        // 账户余额开始
+        .usermoney {
+            .bd {
+                .balance {
+                    padding-bottom: 25px;
+                    margin-bottom: 15px;
+                    overflow: hidden;
+                    .total {
+                        float: left;
+                        font-size: 18px;
+                        .money {
+                            span {
+                                margin-left: 15px;
+                                font-size: 22px;
+                                color: #ff9d00;
+                                em {
+                                    font-style: normal;
+                                    font-size: 36px;
+                                    color: #ff9d00;
+                                }
+                            }
+                            a {
+                                display: inline-block;
+                                line-height: 24px;
+                                margin-left: 10px;
+                                padding: 0 10px;
+                                font-size: 12px;
+                                border-radius: 3px;
+                                vertical-align: 8px;
+                                color: #ff9d00;
+                                background-color: #fff6e5;
+                                i {
+                                    display: inline-block;
+                                    float: left;
+                                    width: 9px;
+                                    height: 13px;
+                                    margin: 6px 3px 0 0;
+                                    background: url(../images/i_btns4.png) no-repeat -165px -20px;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                        .honey {
+                            span {
+                                margin-left: 15px;
+                                color: #ff9d00;
+                                font-size: 22px;
+                                i {
+                                    display: inline-block;
+                                    width: 15px;
+                                    height: 18px;
+                                    margin-right: 10px;
+                                    background: url(../images/i_btns4.png) no-repeat 0 -40px;
+                                }
+                                em {
+                                    font-size: 36px;
+                                    font-style: normal;
+                                }
+                            }
+                        }
+                    }
+                    .push {
+                        position: relative;
+                        float: right;
+                        margin-top: 15px;
+                        color: #999;
+                        font-size: 12px;
+                        text-align: right;
+                        button {
+                            float: right;
+                            width: 130px;
+                            height: 36px;
+                            line-height: 36px;
+                            border-radius: 3px;
+                            color: #fff;
+                            font-size: 16px;
+                            text-align: center;
+                            outline: none;
+                            border: 0;
+                            background-color: #999;
+                        }
+                        span {
+                            float: right;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                .income {
+                    .in-nav {
+                        height: 48px;
+                        margin-bottom: 26px;
+                        border-bottom: 1px solid #e4e4e4;
+                        ul {
+                            float: left;
+                            li {
+                                position: relative;
+                                float: left;
+                                width: 180px;
+                                height: 48px;
+                                line-height: 49px;
+                                text-align: center;
+                                cursor: pointer;
+                                font-size: 16px;
+                                &.nav-active {
+                                    color: #ff9d00;
+                                }
+                                .bar {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -1px;
+                                    display: block;
+                                    width: 180px;
+                                    height: 3px;
+                                    background-color: #fc9c27;
+                                }
+                            }
+                        }
+                        a {
+                            float: right;
+                            line-height: 48px;
+                            font-size: 12px;
+                            color: #ff9d00;
+                        }
+                    }
+                    .in-empty {
+                        padding: 100px 0;
+                        text-align: center;
+                        font-size: 18px;
+                        i {
+                            display: inline-block;
+                            width: 72px;
+                            height: 66px;
+                            margin-bottom: 30px;
+                            background: url(../images/msg-static-cry.png) no-repeat 0 0;
+                        }
+                        a {}
+                    }
+                }
+            }
+        } // 账户余额结束
+    }
+}
+
+
+
+// 正文结束
 
 /*脚部开始*/
 

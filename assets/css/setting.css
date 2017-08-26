@@ -86,6 +86,516 @@ a {
       color: #c9c9c9; }
 
 /*头部结束*/
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 25px 0;
+  color: #666; }
+  .wrapper .aside {
+    float: left;
+    width: 220px; }
+    .wrapper .aside a {
+      display: block;
+      line-height: 46px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #666;
+      border-radius: 3px; }
+      .wrapper .aside a.active {
+        background-color: #ffa800;
+        color: #fff; }
+        .wrapper .aside a.active i {
+          background-position: -22px 0; }
+      .wrapper .aside a:not(.active):hover {
+        background-color: #f0f0f0; }
+      .wrapper .aside a i {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin: 0 10px 0 24px;
+        vertical-align: middle;
+        background: url(../images/i_left4.png) no-repeat; }
+        .wrapper .aside a i.i2 {
+          background-position: 0 -22px; }
+        .wrapper .aside a i.i3 {
+          background-position: 0 -44px; }
+        .wrapper .aside a i.i4 {
+          background-position: 0 -66px; }
+        .wrapper .aside a i.i5 {
+          background-position: 0 -88px; }
+        .wrapper .aside a i.i6 {
+          background-position: 0 -110px; }
+  .wrapper .content {
+    float: right;
+    width: 740px;
+    min-height: 480px;
+    padding-left: 40px; }
+    .wrapper .content .hd {
+      margin: 0 0 20px 0;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #eee; }
+      .wrapper .content .hd strong {
+        font-size: 24px;
+        font-weight: normal;
+        color: #444; }
+      .wrapper .content .hd span {
+        margin-left: 18px;
+        font-size: 14px;
+        color: #999; }
+        .wrapper .content .hd span .progress {
+          position: relative;
+          display: inline-block;
+          width: 110px;
+          height: 16px;
+          margin-left: 8px;
+          vertical-align: middle;
+          background-color: #bddf7d; }
+          .wrapper .content .hd span .progress .num {
+            position: absolute;
+            right: 3px;
+            line-height: 16px;
+            font-size: 12px;
+            color: #fff; }
+            .wrapper .content .hd span .progress .num .on {
+              height: 16px;
+              background-color: #add75c; }
+    .wrapper .content .userinfo {
+      display: none;
+      padding-bottom: 20px; }
+      .wrapper .content .userinfo form dl {
+        clear: both;
+        padding-bottom: 15px;
+        overflow: hidden; }
+        .wrapper .content .userinfo form dl dt {
+          float: left;
+          width: 85px;
+          padding: 6px 10px 0 0;
+          font-size: 16px;
+          color: #a1a1a1;
+          text-align: right; }
+        .wrapper .content .userinfo form dl dd {
+          float: left;
+          width: 490px; }
+          .wrapper .content .userinfo form dl dd input {
+            width: 208px;
+            height: 18px;
+            line-height: 18px;
+            padding: 6px 8px;
+            margin: 2px 0;
+            font-size: 14px;
+            color: #999;
+            outline: none;
+            border: 1px solid #d3d3d3;
+            border-radius: 3px;
+            transition: box-shadow 0.25s linear 0s; }
+            .wrapper .content .userinfo form dl dd input:focus {
+              border: 1px solid #ffa800;
+              box-shadow: 0 0 5px #ffa200; }
+          .wrapper .content .userinfo form dl dd label {
+            float: left;
+            padding-right: 20px;
+            line-height: 32px;
+            font-size: 14px;
+            cursor: pointer; }
+            .wrapper .content .userinfo form dl dd label .radio {
+              position: relative;
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              line-height: 18px;
+              margin-right: 6px;
+              vertical-align: middle; }
+              .wrapper .content .userinfo form dl dd label .radio input {
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                width: 16px;
+                height: 16px;
+                margin: 0;
+                opacity: 0; }
+              .wrapper .content .userinfo form dl dd label .radio span {
+                position: relative;
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                font-size: 14px;
+                border-radius: 100%;
+                background-color: #fff;
+                border: 1px solid #ffa800; }
+                .wrapper .content .userinfo form dl dd label .radio span:after {
+                  content: '';
+                  position: absolute;
+                  top: 2px;
+                  right: 2px;
+                  left: 2px;
+                  bottom: 2px;
+                  border-radius: 100%;
+                  background-color: #fff;
+                  opacity: 0; }
+          .wrapper .content .userinfo form dl dd textarea {
+            display: inline-block;
+            width: 472px;
+            height: 110px;
+            line-height: 1.6em;
+            margin: 2px 0;
+            padding: 6px 8px;
+            font-size: 14px;
+            font-family: Arial, "Lucida Grande", "Microsoft Yahei", "Hiragino Sans GB", "Hiragino Sans GB W3", "PingFang SC", STHeiti;
+            color: #999;
+            outline: none;
+            border-radius: 3px;
+            resize: none;
+            transition: box-shadow 0.25s linear 0s; }
+            .wrapper .content .userinfo form dl dd textarea:focus {
+              border: 1px solid #ffa800;
+              box-shadow: 0 0 5px #ffa200; }
+          .wrapper .content .userinfo form dl dd p {
+            padding-bottom: 5px;
+            font-size: 14px;
+            color: #999; }
+            .wrapper .content .userinfo form dl dd p b {
+              color: #ffa800;
+              font-weight: normal; }
+          .wrapper .content .userinfo form dl dd.tips {
+            width: 345px;
+            padding: 15px 20px;
+            font-size: 12px;
+            line-height: 1.8em;
+            background-color: #f6f6f6; }
+          .wrapper .content .userinfo form dl dd button {
+            display: block;
+            width: 112px;
+            height: 36px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            text-align: center;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            background-color: #ffa800; }
+    .wrapper .content .userlogo {
+      display: none;
+      width: 120px;
+      height: 120px; }
+      .wrapper .content .userlogo .img {
+        padding: 30px 0 20px; }
+      .wrapper .content .userlogo .sub {
+        position: relative;
+        display: inline-block;
+        width: 120px;
+        height: 36px;
+        cursor: pointer; }
+        .wrapper .content .userlogo .sub input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 2;
+          width: 120px;
+          height: 36px;
+          opacity: 0;
+          cursor: pointer; }
+        .wrapper .content .userlogo .sub .btn {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: inline-block;
+          z-index: 1;
+          width: 120px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          font-size: 16px;
+          color: #fff;
+          border: 0;
+          border-radius: 5px;
+          vertical-align: middle;
+          background-color: #ffa800; }
+    .wrapper .content .userbind {
+      display: none;
+      position: relative; }
+      .wrapper .content .userbind .bind-title {
+        padding: 10px 0 20px;
+        font-size: 14px;
+        color: #999; }
+      .wrapper .content .userbind .bind-item {
+        width: 470px;
+        padding: 25px 0 40px;
+        border-bottom: 1px dashed #d7d7d7;
+        overflow: hidden; }
+        .wrapper .content .userbind .bind-item:last-child {
+          border: 0; }
+        .wrapper .content .userbind .bind-item dt {
+          float: left;
+          width: 57px;
+          padding: 4px 10px 0 0;
+          font-size: 16px;
+          color: #a1a1a1;
+          text-align: right; }
+          .wrapper .content .userbind .bind-item dt i {
+            display: block;
+            width: 37px;
+            height: 37px;
+            border-radius: 4px;
+            background: url(../images/i_connect.png) no-repeat; }
+            .wrapper .content .userbind .bind-item dt i.qzone {
+              background-position: 0 -37px; }
+        .wrapper .content .userbind .bind-item dd {
+          float: left;
+          width: 385px; }
+          .wrapper .content .userbind .bind-item dd h3 {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.5em; }
+            .wrapper .content .userbind .bind-item dd h3 span {
+              margin-left: 6px;
+              color: #444; }
+            .wrapper .content .userbind .bind-item dd h3 strong {
+              margin-right: 6px;
+              font-size: 18px;
+              font-weight: normal; }
+          .wrapper .content .userbind .bind-item dd .btns {
+            padding: 22px 0 0; }
+            .wrapper .content .userbind .bind-item dd .btns a {
+              display: inline-block;
+              width: 145px;
+              height: 36px;
+              line-height: 36px;
+              font-size: 16px;
+              text-align: center;
+              color: #fff;
+              border-radius: 5px;
+              background-color: #ffa800; }
+              .wrapper .content .userbind .bind-item dd .btns a.jc {
+                background-color: #98BF37; }
+      .wrapper .content .userbind .weixin {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 132px;
+        padding: 20px;
+        color: #999;
+        background-color: #fff;
+        box-shadow: 0 2px 6px #ccc; }
+        .wrapper .content .userbind .weixin img {
+          width: 126px;
+          height: 123px;
+          text-align: center;
+          border: 3px solid #ffa800; }
+        .wrapper .content .userbind .weixin .t1 {
+          padding: 10px 0 15px;
+          font-size: 14px; }
+        .wrapper .content .userbind .weixin .t2 {
+          font-size: 12px;
+          line-height: 1.6em; }
+        .wrapper .content .userbind .weixin .t3 {
+          padding-top: 8px;
+          font-size: 16px; }
+    .wrapper .content .safe {
+      display: none; }
+      .wrapper .content .safe dl {
+        padding-bottom: 15px; }
+        .wrapper .content .safe dl dt {
+          float: left;
+          width: 75px;
+          padding: 4px 10px 0 0;
+          text-align: right;
+          font-size: 14px; }
+        .wrapper .content .safe dl dd a {
+          display: inline-block;
+          padding: 4px 10px 0 0;
+          font-size: 14px; }
+    .wrapper .content .home {
+      display: none; }
+      .wrapper .content .home p {
+        font-size: 14px; }
+    .wrapper .content .blacklist {
+      display: none;
+      width: 585px;
+      margin-left: 20px; }
+      .wrapper .content .blacklist .inner {
+        margin: 0 -18px;
+        padding: 20px;
+        background-color: #efefef;
+        overflow: hidden; }
+        .wrapper .content .blacklist .inner .col-search {
+          float: left;
+          width: 308px;
+          height: 360px;
+          margin-right: 10px;
+          border: 1px solid #e5e5e5;
+          background-color: #fff; }
+          .wrapper .content .blacklist .inner .col-search dt {
+            position: relative;
+            height: 30px;
+            margin: 9px 9px 0; }
+            .wrapper .content .blacklist .inner .col-search dt input {
+              width: 238px;
+              height: 28px;
+              padding: 0 38px 0 12px;
+              line-height: 28px;
+              font-size: 14px;
+              color: #666;
+              border: 1px solid #ff9d00;
+              border-radius: 3px; }
+            .wrapper .content .blacklist .inner .col-search dt .search-btn {
+              position: absolute;
+              top: 7px;
+              right: 12px;
+              width: 17px;
+              height: 16px;
+              border: none;
+              background: url(../images/i_btns4.png) no-repeat -60px -20px; }
+          .wrapper .content .blacklist .inner .col-search dd {
+            width: auto; }
+            .wrapper .content .blacklist .inner .col-search dd ul {
+              position: relative;
+              height: 260px; }
+            .wrapper .content .blacklist .inner .col-search dd .black-action {
+              margin-top: 10px;
+              text-align: center; }
+              .wrapper .content .blacklist .inner .col-search dd .black-action a {
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 25px;
+                font-size: 14px;
+                border-radius: 2px;
+                color: #fff;
+                background-color: #ff9d00; }
+        .wrapper .content .blacklist .inner .col-list {
+          float: left;
+          width: 259px;
+          height: 360px;
+          border: 1px solid #e5e5e5;
+          background-color: #fff; }
+          .wrapper .content .blacklist .inner .col-list dt {
+            height: 30px;
+            line-height: 30px;
+            margin: 9px 20px 0;
+            font-size: 14px;
+            text-align: right;
+            color: #a1a1a1; }
+          .wrapper .content .blacklist .inner .col-list dd {
+            padding-left: 20px; }
+            .wrapper .content .blacklist .inner .col-list dd ul {
+              position: relative;
+              height: 310px;
+              overflow: hidden; }
+        .wrapper .content .blacklist .inner .tips {
+          font-size: 12px;
+          text-align: right;
+          color: #ffa800; }
+    .wrapper .content .usermoney .bd .balance {
+      padding-bottom: 25px;
+      margin-bottom: 15px;
+      overflow: hidden; }
+      .wrapper .content .usermoney .bd .balance .total {
+        float: left;
+        font-size: 18px; }
+        .wrapper .content .usermoney .bd .balance .total .money span {
+          margin-left: 15px;
+          font-size: 22px;
+          color: #ff9d00; }
+          .wrapper .content .usermoney .bd .balance .total .money span em {
+            font-style: normal;
+            font-size: 36px;
+            color: #ff9d00; }
+        .wrapper .content .usermoney .bd .balance .total .money a {
+          display: inline-block;
+          line-height: 24px;
+          margin-left: 10px;
+          padding: 0 10px;
+          font-size: 12px;
+          border-radius: 3px;
+          vertical-align: 8px;
+          color: #ff9d00;
+          background-color: #fff6e5; }
+          .wrapper .content .usermoney .bd .balance .total .money a i {
+            display: inline-block;
+            float: left;
+            width: 9px;
+            height: 13px;
+            margin: 6px 3px 0 0;
+            background: url(../images/i_btns4.png) no-repeat -165px -20px;
+            overflow: hidden; }
+        .wrapper .content .usermoney .bd .balance .total .honey span {
+          margin-left: 15px;
+          color: #ff9d00;
+          font-size: 22px; }
+          .wrapper .content .usermoney .bd .balance .total .honey span i {
+            display: inline-block;
+            width: 15px;
+            height: 18px;
+            margin-right: 10px;
+            background: url(../images/i_btns4.png) no-repeat 0 -40px; }
+          .wrapper .content .usermoney .bd .balance .total .honey span em {
+            font-size: 36px;
+            font-style: normal; }
+      .wrapper .content .usermoney .bd .balance .push {
+        position: relative;
+        float: right;
+        margin-top: 15px;
+        color: #999;
+        font-size: 12px;
+        text-align: right; }
+        .wrapper .content .usermoney .bd .balance .push button {
+          float: right;
+          width: 130px;
+          height: 36px;
+          line-height: 36px;
+          border-radius: 3px;
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+          outline: none;
+          border: 0;
+          background-color: #999; }
+        .wrapper .content .usermoney .bd .balance .push span {
+          float: right;
+          margin-top: 15px; }
+    .wrapper .content .usermoney .bd .income .in-nav {
+      height: 48px;
+      margin-bottom: 26px;
+      border-bottom: 1px solid #e4e4e4; }
+      .wrapper .content .usermoney .bd .income .in-nav ul {
+        float: left; }
+        .wrapper .content .usermoney .bd .income .in-nav ul li {
+          position: relative;
+          float: left;
+          width: 180px;
+          height: 48px;
+          line-height: 49px;
+          text-align: center;
+          cursor: pointer;
+          font-size: 16px; }
+          .wrapper .content .usermoney .bd .income .in-nav ul li.nav-active {
+            color: #ff9d00; }
+          .wrapper .content .usermoney .bd .income .in-nav ul li .bar {
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            display: block;
+            width: 180px;
+            height: 3px;
+            background-color: #fc9c27; }
+      .wrapper .content .usermoney .bd .income .in-nav a {
+        float: right;
+        line-height: 48px;
+        font-size: 12px;
+        color: #ff9d00; }
+    .wrapper .content .usermoney .bd .income .in-empty {
+      padding: 100px 0;
+      text-align: center;
+      font-size: 18px; }
+      .wrapper .content .usermoney .bd .income .in-empty i {
+        display: inline-block;
+        width: 72px;
+        height: 66px;
+        margin-bottom: 30px;
+        background: url(../images/msg-static-cry.png) no-repeat 0 0; }
+
 /*脚部开始*/
 #footer {
   clear: both;

@@ -32,3 +32,18 @@ $('.side-slider li').click(function() {
         index = that.index();
     });
 })
+$('.free').mouseover(function() {
+    $('.free-inner').stop().fadeIn(500);
+    $(this).css({
+        // 'border': 0,
+        'borderTop': '3px solid #ff9d00'
+    })
+    $('.free a').css({
+        'border': 0
+    })
+}).mouseout(function() {
+    $('.free-inner').stop().fadeOut(500);
+    $(this).css({
+        'borderColor': 'transparent'
+    })
+})

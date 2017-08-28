@@ -32,6 +32,22 @@ a {
     box-shadow: 0 2px 2px #ddd;
 }
 
+.free {
+    line-height: 52px;
+    border-top: 3px solid transparent;
+}
+
+.border {
+    display: inline-block;
+    width: 0;
+    height: 0px;
+    margin-left: 3px;
+    vertical-align: middle;
+    border-top: 4px solid #666;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
 .mfw-header {
     width: 1000px;
     height: 58px;
@@ -54,11 +70,40 @@ a {
         padding: 0 10px 0 25px;
         font-size: 14px;
         li {
+            position: relative;
             float: left;
+            box-sizing: border-box;
+            ul {
+                display: none;
+                position: absolute;
+                top: 55px;
+                left: -10px;
+                overflow: hidden;
+                z-index: 99;
+                width: 120px;
+                padding-left: 16px;
+                background-color: rgba(255, 255, 255, .95);
+                li {
+
+                    float: none;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #666;
+                }
+            }
             a {
                 display: inline-block;
                 padding: 0 16px;
                 color: #333;
+                &:not(.current):hover {
+                    height: 55px;
+                    color: #ff9d00;
+                    border-bottom: 3px solid #ff9d00;
+                }
+            }
+            .current {
+                color: #fff;
+                background-color: #ff9d00;
             }
         }
     }

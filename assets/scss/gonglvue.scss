@@ -59,6 +59,15 @@ a {
                 display: inline-block;
                 padding: 0 16px;
                 color: #333;
+                &:not(.current):hover {
+                    height: 55px;
+                    color: #ff9d00;
+                    border-bottom: 3px solid #ff9d00;
+                }
+            }
+            .current {
+                color: #fff;
+                background-color: #ff9d00;
             }
         }
     }
@@ -510,6 +519,7 @@ a {
         }
     }
 }
+
 
 
 /*正文结束*/

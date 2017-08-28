@@ -25,7 +25,14 @@ a {
   position: fixed;
   z-index: 999;
   width: 100%;
+  height: 57px;
   margin: 0 auto; }
+  #header:hover {
+    background-color: white; }
+    #header:hover a {
+      color: #666; }
+  #header a {
+    color: #fff; }
 
 .mfw-header {
   width: 1000px;
@@ -51,6 +58,13 @@ a {
         display: inline-block;
         padding: 0 16px;
         color: #333; }
+        .mfw-header .nav li a:not(.current):hover {
+          height: 55px;
+          color: #ff9d00;
+          border-bottom: 3px solid #ff9d00; }
+      .mfw-header .nav li .current {
+        color: #fff;
+        background-color: #ff9d00; }
   .mfw-header .login {
     float: right;
     height: 26px;
